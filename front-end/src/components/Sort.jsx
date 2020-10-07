@@ -23,6 +23,7 @@ class Sort extends React.Component {
             </div>
           </div>
         </div>
+        <hr/>
       </div>
     );
   }

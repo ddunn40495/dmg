@@ -141,6 +141,7 @@ h2 {
 .economy-bestseller {
   width: 49%;
   box-sizing: border-box;
+  position: relative;
 }
 
 .premium-info {
@@ -161,6 +162,17 @@ h2 {
   height: 24px;
   background-color: #ffa500;
   border: 1px solid #ffa500;
+}
+
+.tag, .premium-info {
+  position: absolute;
+}
+.premium-info {
+  z-index: 1;
+  margin-top: 1em;
+}
+.tag {
+  z-index: 2;
 }
 
 .button-container {
@@ -511,5 +523,17 @@ h2 {
 
   .premium-cart-btn-text {
     display: none;
+  }
+
+  .product-info-container {
+    display: block;
+  }
+
+  .mobile1 {
+    width: 48%;
+  }
+
+  .mobile2 {
+    width: 48%;
   }
 }
