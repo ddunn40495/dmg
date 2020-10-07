@@ -1,4 +1,6 @@
 import React from "react";
+import Oelogo from "../assets/oelogo.png";
+import Autoexpress from "../assets/autoexpress.png";
 
 class Bestseller extends React.Component {
   constructor(props) {
@@ -12,14 +14,18 @@ class Bestseller extends React.Component {
         <div className='premium-info'>
           <div className='premium-img'>
             <div className='tire-img'></div>
-            <div className='auto-img'></div>
+            <div className='auto-img'><img src={Autoexpress} alt="auto express logo"/></div>
           </div>
           <div className='premium-text'>
             <h2>Continental - Contiecontact 5</h2>
             <div className='pb-stock-info'>
-              <div className='oelogo'></div>
-              205/55 R16 H SUV Stock <div className='stock-img'></div>
-              Price ₪340 Total ₪1,360
+              <div className='oelogo'><img src={Oelogo}/></div>
+              <div className="product-details">
+                <div className="pd-item">205/55 R16 H SUV</div>
+                <div className="pd-item">Stock ✅</div>
+                <div className="pd-item">Price ₪340</div>
+                <div className="pd-item">Total ₪1,360</div>
+              </div>
             </div>
             <div className='button-container'>
               <div className='stock-buttons'>

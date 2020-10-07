@@ -1,4 +1,5 @@
 import React from "react";
+import Oelogo from "../assets/oelogo.png";
 
 class Item extends React.Component {
   constructor(props) {
@@ -8,28 +9,25 @@ class Item extends React.Component {
   render() {
     return (
       <div className='products'>
-        <ul className='product-info'>
-          <li className='product-name'>Continental PremiumContact™ 6</li>
-          <li>
-            {" "}
-            <div className='oelogo'></div>
-          </li>
-          <li>195/55 R15 85V SUV</li>
-          <li>
+        <div className='product-info-container'>
+          <div className='product-name product-item'>Continental PremiumContact™ 6</div>
+          <div className='oelogo'><img src={Oelogo}/></div>
+          <div className='product-type product-item'>195/55 R15 85V SUV</div>
+          <div className="product-stock product-item">
             Stock <div className='stock-img'></div>
-          </li>
-          <li>Price ₪340</li>
-          <li className='stock-buttons'>
+          </div>
+          <div className="product-price product-item">Price ₪340</div>
+          <div className='stock-buttons produc-stock-buttons product-item'>
             <button className='stock-btn'>-</button>4
             <button className='stock-btn'>+</button>
-          </li>
-          <li>Total ₪1,360</li>
-          <li>
+          </div>
+          <div className="product-total product-item">Total ₪1,360</div>
+          <div className="product-cart product-item">
             <button className='cart-btn product-cart-btn'>
               <span class='cart-btn-text'>Add to cart</span>
             </button>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     );
   }
