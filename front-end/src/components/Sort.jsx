@@ -11,7 +11,7 @@ class Sort extends React.Component {
         <h1>Recommended Products</h1>
         <div className='filter-container'>
           <div className='selected-filters'>
-            Selected filters: <div className='chip'>Continental</div>
+            Selected filters: <div className='chip'>Continental <button className="close-btn">x</button></div>
           </div>
           <div className='sort'>
             Sort by:{" "}
