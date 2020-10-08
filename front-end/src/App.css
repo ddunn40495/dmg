@@ -429,6 +429,18 @@ h2 {
   }
 }
 
+.nav-middle {
+  padding: 0 3em 0 10em;
+}
+
+.search-form {
+  margin: 1em 0;
+}
+
+.nav-right {
+  margin: .15em 0;
+}
+
 /* MOBILE 375 */
 
 @media (max-width: 375px) {
@@ -469,6 +481,7 @@ h2 {
   .search-form {
     width: 26px;
     height: 26px;
+    margin: .15em 0;
   }
 
   .nav-left img {
