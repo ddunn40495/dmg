@@ -28,7 +28,7 @@ class Bestseller extends React.Component {
   }
   render() {
     return (
-      <div className='bestsellers-container'>
+      <div>
         <div id='desktop-display'>
           <div className='premium-bestseller'>
             <div className='tag'>{this.props.cat} Bestseller</div>
