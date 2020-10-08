@@ -33,7 +33,7 @@ class Bestseller extends React.Component {
                 <button className='stock-btn'>+</button>
               </div>
               <button className='cart-btn premium-cart-btn'>
-                <span class='premium-cart-btn-text'>Add to cart</span>
+                <span className='premium-cart-btn-text'>Add to cart</span>
               </button>
             </div>
           </div>

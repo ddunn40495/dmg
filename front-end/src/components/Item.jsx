@@ -24,7 +24,7 @@ class Item extends React.Component {
           <div className="product-total product-item mobile2">Total ₪1,360</div>
           <div className="product-cart product-item mobile2">
             <button className='cart-btn product-cart-btn'>
-              <span class='cart-btn-text'>Add to cart</span>
+              <span className='cart-btn-text'>Add to cart</span>
             </button>
           </div>
         </div>
