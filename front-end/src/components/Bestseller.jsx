@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import StockButton from "./StockButton";
 import CartButton from "./CartButton";
@@ -28,33 +30,97 @@ class Bestseller extends React.Component {
   }
   render() {
     return (
+    <div className='bestsellers-container'>
+
+      <div id='desktop-display'>
+
+        <div className='premium-bestseller'>
+
+          <div className='tag'>Premium Bestseller</div>
+            <div className='premium-info'>
+              <div className='premium-img'>
+                <div className='tire-img'></div>
+                <div className='auto-img'><img src={Autoexpress} alt="auto express logo"/></div>
+              </div>
+
+              <div className='premium-text'>
+                <h2>Continental - Contiecontact 5</h2>
+                <div className='pb-stock-info'>
+                  <div className='oelogo'><img src={Oelogo}/></div>
+                  <div className="product-details">
+                    <div className="pd-item">205/55 R16 H SUV</div>
+                    <div className="pd-item">Stock ✅</div>
+                    <div className="pd-item">Price ₪340</div>
+                    <div className="pd-item">Total ₪1,360</div>
+                  </div>
+                </div>
+
+                <div className='button-container'>
+                  <div className='stock-buttons'>
+                    <button className='stock-btn'>—</button>4
+                    <button className='stock-btn'>+</button>
+                  </div>
+                  <button className='cart-btn premium-cart-btn'>
+                    <span className='premium-cart-btn-text'>Add to cart</span>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+      </div>
+
+
+    <div id='mobile-display'>
+
       <div className='premium-bestseller'>
+
         <div className='tag'>{this.props.cat} Bestseller</div>
+
         <div className='premium-info'>
+        <div className='bestseller-row1'>
+
           <div className='premium-img'>
             <div className='tire-img'></div>
-            <div className='auto-img'></div>
+            <div className='auto-img'><img src={Autoexpress} alt="auto express logo"/></div>
           </div>
+
           <div className='premium-text'>
             <h2>
               {this.props.brand} - {this.props.name}
             </h2>
             <div className='pb-stock-info'>
-              <div className='oelogo'></div>
-              205/55 R16 H SUV Stock <div className='stock-img'></div>
-              Price ₪{this.props.price} Total ₪1,360
+
+              <div className="row1">
+                <img src={Oelogo} className='oelogo'/>205/55 R16 H SUV
+              </div>
+
+                <div className="row2">
+                  <div className="pd-item">Stock ✅ Price ₪{this.props.price} Total ₪1,360</div>
+                </div>
             </div>
-            <div className='button-container'>
-              <StockButton
+          </div>
+
+        </div>
+
+            <div className='bestseller-row2 button-container'>
+                <StockButton
                 num={this.state.num}
                 add={this.addNum}
                 sub={this.subNum}
               />
               <CartButton />
+
             </div>
-          </div>
+
         </div>
+
       </div>
+    </div>
+  </div>
     );
   }
 }
