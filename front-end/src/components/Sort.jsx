@@ -7,13 +7,12 @@ class Sort extends React.Component {
   }
   render() {
     return (
-      <div className='sort'>
+      <div className='row'>
         <h1>Recommended Products</h1>
-        <div className='filter-container'>
-          <div className='selected-filters'>
-            Selected filters: <div className='chip'>Continental</div>
+          <div className='col-10 selected-filters'>
+            Selected filters: <div className='chip'>Continental <button className="close-btn">x</button></div>
           </div>
-          <div className='sort'>
+          <div className=' col-2 sort'>
             Sort by:{" "}
             <div className='chip'>
               <label for='popularity'>Popularity</label>
@@ -23,7 +22,6 @@ class Sort extends React.Component {
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }

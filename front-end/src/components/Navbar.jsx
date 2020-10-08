@@ -1,4 +1,8 @@
 import React from "react";
+import Options from "../assets/options-sharp.png";
+import Account from "../assets/account.png";
+import Orders from "../assets/order.png";
+import Cart from "../assets/shoppingcart.png";
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -8,8 +12,10 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className='navbar'>
-        <div className='nav-left filter'></div>
-        <div className='nav-middle search'>
+        <div className='nav-left filter'>
+          <img src={Options} alt="filter img"/>
+        </div>
+        <div className="nav-middle search">
           <form className='search-form'>
             <input
               type='search'
@@ -19,21 +25,24 @@ class Navbar extends React.Component {
             <input type='submit' value='🔍' className='search-btn'></input>
           </form>
         </div>
-        <div className='nav-right'>
-          <div className='account'>
+        <div className="nav-right">
+          <div className='nav-right-items account'>
+            <img src={Account} alt="account img"/>
             <br />
             <span className='nav-text'>Account</span>
           </div>
-          <div className='orders'>
+          <div className='nav-right-items orders'>
+            <img src={Orders} alt="order img"/>
             <br />
             <span className='nav-text'>Orders</span>
           </div>
-          <div className='shopping-cart'>
+          <div className='nav-right-items shopping-cart'>
+            <img src={Cart} alt="shopping cart img"/>
             <br />
             <span className='nav-text'>Cart</span>
           </div>
         </div>
-      </div>
+        </div>
     );
   }
 }

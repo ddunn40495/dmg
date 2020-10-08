@@ -14,9 +14,8 @@ class App extends React.Component {
         <Navbar />
         <div className='container'>
           <Sort />
+          <hr/>
           <Products />
-
-          <p>hey</p>
         </div>
       </div>
     );
