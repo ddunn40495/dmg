@@ -1,10 +1,11 @@
 import React from "react";
-import Bestseller from "../components/Bestseller";
+import Bestseller2 from "../components/Bestseller2";
 import Item from "../components/Item";
 import LoadButton from "../components/LoadButton";
 import tires from "../data/tires";
 import BestsellerDesk from "../components/BestsellerDesk";
 import BestsellerMob from "../components/BestsellerMob";
+import Bestseller from "../components/Bestseller";
 
 import "../App.css";
 
@@ -34,8 +35,8 @@ class Products extends React.Component {
             price={this.state.data[4].price}
             cat={"Premium"}
           />
-          <BestsellerMob
-            className='mobile-display'
+          <BestsellerDesk
+            className='desktop-display'
             brand={this.state.data[0].brand}
             name={this.state.data[0].name}
             img={this.state.data[0].img}
