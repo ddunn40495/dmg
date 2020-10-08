@@ -126,9 +126,13 @@ h2 {
 .bestsellers-container {
   height: 187px;
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.premium-bestseller {
+  width: 49%;
 }
 
 .premium-bestseller,
