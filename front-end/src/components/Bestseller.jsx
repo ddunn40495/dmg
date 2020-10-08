@@ -1,6 +1,8 @@
 import React from "react";
 import StockButton from "./StockButton";
 import CartButton from "./CartButton";
+import Oelogo from "../assets/oelogo.png";
+import Autoexpress from "../assets/autoexpress.png";
 
 class Bestseller extends React.Component {
   constructor(props) {
