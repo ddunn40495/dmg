@@ -6,7 +6,11 @@ class CartButton extends React.Component {
     this.state = {};
   }
   render() {
-    return <div></div>;
+    return (
+      <button className='cart-btn premium-cart-btn'>
+        <span class='premium-cart-btn-text'>Add to cart</span>
+      </button>
+    );
   }
 }
 
