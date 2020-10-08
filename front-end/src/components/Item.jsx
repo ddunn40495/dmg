@@ -1,15 +1,36 @@
 import React from "react";
+import StockButton from "./StockButton";
+import CartButton from "./CartButton";
 
 class Item extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      num: 1,
+    };
+  }
+  addNum = () => {
+    const upOne = 1;
+    this.setState({
+      num: this.state.num + upOne,
+    });
+  };
+  subNum = () => {
+    const downOne = 1;
+    this.setState({
+      num: this.state.num - downOne,
+    });
+  };
+  componentDidMount() {
+    console.log(this.state.num);
   }
   render() {
     return (
       <div className='products'>
         <ul className='product-info'>
-          <li className='product-name'>Continental PremiumContact™ 6</li>
+          <li className='product-name'>
+            {this.props.brand} {this.props.name}
+          </li>
           <li>
             {" "}
             <div className='oelogo'></div>
@@ -18,16 +39,15 @@ class Item extends React.Component {
           <li>
             Stock <div className='stock-img'></div>
           </li>
-          <li>Price ₪340</li>
-          <li className='stock-buttons'>
-            <button className='stock-btn'>-</button>4
-            <button className='stock-btn'>+</button>
-          </li>
+          <li>Price ₪{this.props.price}</li>
+          <StockButton
+            num={this.state.num}
+            add={this.addNum}
+            sub={this.subNum}
+          />
           <li>Total ₪1,360</li>
           <li>
-            <button className='cart-btn product-cart-btn'>
-              <span class='cart-btn-text'>Add to cart</span>
-            </button>
+            <CartButton />
           </li>
         </ul>
       </div>
