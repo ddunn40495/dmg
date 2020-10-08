@@ -51,7 +51,7 @@ class Bestseller extends React.Component {
     <div className='col-6 premium-bestseller'>
       <div className='tag'>Premium Bestseller</div>
       <div className='premium-info'>
-      <div class='bestseller-row1'>
+      <div className='bestseller-row1'>
         <div className='premium-img'>
           <div className='tire-img'></div>
           <div className='auto-img'><img src={Autoexpress} alt="auto express logo"/></div>

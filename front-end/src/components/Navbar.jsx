@@ -11,12 +11,11 @@ class Navbar extends React.Component {
   }
   render() {
     return (
-      <div className='container-fluid navbar'>
-      <div className='row'>
-        <div className='col-1 col-sm-1'>
+      <div className='navbar'>
+        <div className='nav-left filter'>
           <img src={Options} alt="filter img"/>
         </div>
-        <div className="col-8 col-sm-2">
+        <div className="nav-middle search">
           <form className='search-form'>
             <input
               type='search'
@@ -26,24 +25,24 @@ class Navbar extends React.Component {
             <input type='submit' value='🔍' className='search-btn'></input>
           </form>
         </div>
-
-          <div className='col-1 col-sm-3 account'>
+        <div className="nav-right">
+          <div className='nav-right-items account'>
             <img src={Account} alt="account img"/>
             <br />
             <span className='nav-text'>Account</span>
           </div>
-          <div className='col-1 col-sm-3 orders'>
+          <div className='nav-right-items orders'>
             <img src={Orders} alt="order img"/>
             <br />
             <span className='nav-text'>Orders</span>
           </div>
-          <div className='col-1 col-sm-3 shopping-cart'>
+          <div className='nav-right-items shopping-cart'>
             <img src={Cart} alt="shopping cart img"/>
             <br />
             <span className='nav-text'>Cart</span>
           </div>
         </div>
-      </div>
+        </div>
     );
   }
 }
