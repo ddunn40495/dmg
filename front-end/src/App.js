@@ -26,8 +26,6 @@ class App extends React.Component {
           <Sort />
           <hr/>
           <Products />
-
-          <p>hey</p>
         </div>
       </div>
     );
