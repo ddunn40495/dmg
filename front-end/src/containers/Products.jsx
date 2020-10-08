@@ -3,6 +3,8 @@ import Bestseller from "../components/Bestseller";
 import Item from "../components/Item";
 import LoadButton from "../components/LoadButton";
 import tires from "../data/tires";
+import BestsellerDesk from "../components/BestsellerDesk";
+import BestsellerMob from "../components/BestsellerMob";
 
 import "../App.css";
 
@@ -24,14 +26,16 @@ class Products extends React.Component {
     return (
       <div className='products-container'>
         <div className='bestsellers-container'>
-          <Bestseller
+          <BestsellerDesk
+            className='desktop-display'
             brand={this.state.data[4].brand}
             name={this.state.data[4].name}
             img={this.state.data[4].img}
             price={this.state.data[4].price}
             cat={"Premium"}
           />
-          <Bestseller
+          <BestsellerMob
+            className='mobile-display'
             brand={this.state.data[0].brand}
             name={this.state.data[0].name}
             img={this.state.data[0].img}

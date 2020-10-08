@@ -29,7 +29,7 @@ class Bestseller extends React.Component {
   render() {
     return (
       <div>
-        <div id='desktop-display'>
+        <div className='desktop-display'>
           <div className='premium-bestseller'>
             <div className='tag'>{this.props.cat} Bestseller</div>
             <div className='premium-info'>

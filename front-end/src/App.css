@@ -291,7 +291,7 @@ h2 {
 }
 
 @media (min-width: 1024px) {
-  #mobile-display {
+  .mobile-display {
     display: none;
   }
 }
@@ -299,7 +299,7 @@ h2 {
 /* TABLET LANDSCAPE 1024*/
 
 @media (max-width: 1024px) and (orientation: landscape) {
-  #mobile-display {
+  .mobile-display {
     display: none;
   }
 
@@ -356,7 +356,7 @@ h2 {
 
 /* TABLET PORTRAIT 768 */
 @media (max-width: 768px) and (orientation: portrait) {
-  #mobile-display {
+  .mobile-display {
     display: none;
   }
 
@@ -442,10 +442,10 @@ h2 {
 /* MOBILE 375 */
 
 @media (max-width: 375px) {
-  #desktop-display {
+  .desktop-display {
     display: none;
   }
-  #mobile-display {
+  .mobile-display {
     display: block;
   }
 

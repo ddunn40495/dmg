@@ -31,7 +31,7 @@ app.use(cors(corsOptions));
 // =======================================
 //              DATABASE
 // =======================================
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3004;
 const mongoURI = process.env.MONGODB_URI;
 const db = mongoose.connection;
 const dbName = process.env.DBNAME;
