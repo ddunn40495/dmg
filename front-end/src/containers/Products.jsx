@@ -43,6 +43,7 @@ class Products extends React.Component {
             price={this.state.data[0].price}
             cat={"Economy"}
           />
+
         </div>
         <div className='item-container'>
           <Item

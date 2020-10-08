@@ -3,6 +3,7 @@ import StockButton from "./StockButton";
 import CartButton from "./CartButton";
 import Oelogo from "../assets/oelogo.png";
 import Autoexpress from "../assets/autoexpress.png";
+import Tire from "../assets/tire.png";
 
 class Bestseller extends React.Component {
   constructor(props) {
@@ -34,7 +35,9 @@ class Bestseller extends React.Component {
             <div className='tag'>{this.props.cat} Bestseller</div>
             <div className='premium-info'>
               <div className='premium-img'>
-                <div className='tire-img'></div>
+                <div className='tire-img'>
+                  <img src={Tire} alt='tire img' />
+                </div>
                 <div className='auto-img'>
                   <img src={Autoexpress} alt='auto express logo' />
                 </div>

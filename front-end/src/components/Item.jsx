@@ -63,8 +63,11 @@ class Item extends React.Component {
                 </div>
               </div>
               <div className='stock-buttons product-stock-buttons product-item'>
-                <button className='stock-btn'>-</button>4
-                <button className='stock-btn'>+</button>
+              <StockButton
+                num={this.state.num}
+                add={this.addNum}
+                sub={this.subNum}
+              />
               </div>
             </div>
             <div className="mobile2">

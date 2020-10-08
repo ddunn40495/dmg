@@ -11,7 +11,7 @@ class StockButton extends React.Component {
         <button onClick={this.props.sub} className='stock-btn'>
           —
         </button>
-        {this.props.num}
+        <p className='number'>{this.props.num}</p>
         <button onClick={this.props.add} className='stock-btn'>
           +
         </button>
