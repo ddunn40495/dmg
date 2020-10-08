@@ -15,8 +15,7 @@ body {
 /* DESKTOP */
 /* desktop 1366px */
 
-
-
+/* GENERAL */
 h1 {
   font-size: 28px;
   font-weight: bold;
@@ -27,6 +26,8 @@ h2 {
   font-weight: bold;
   text-decoration: underline;
 }
+
+/* NAV */
 
 .navbar {
   background-color: white;
@@ -78,12 +79,6 @@ h2 {
   height: 20.29px;
 }
 
-.container {
-  width: 1306px;
-  margin: 0 30px;
-}
-
-
 .search-input {
   width: 525px;
   height: 40px;
@@ -96,6 +91,15 @@ h2 {
   background-color: white;
   border: none;
 }
+
+
+/* BODY */
+
+.container {
+  width: 1306px;
+  margin: 0 30px;
+}
+
 
 /* SEARCH & FILTER */
 .filter-container {
@@ -124,6 +128,7 @@ h2 {
 /* BESTSELLERS CONTAINER */
 
 .bestsellers-container {
+  width: 1306px;
   height: 187px;
   box-sizing: border-box;
   display: flex;
@@ -144,6 +149,7 @@ h2 {
 .premium-info {
   display: flex;
   flex-direction: row;
+  width: 646px;
   height: 175px;
   box-sizing: border-box;
 }
@@ -187,6 +193,15 @@ h2 {
   height: 40px;
   background-color: #e0e0e0;
   border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: row;
+}
+
+.number, .stock-btn {
+  width: 34%;
+}
+.number {
+  padding: 10px;
 }
 
 .stock-btn {
@@ -362,8 +377,11 @@ h2 {
 
 /* TABLET PORTRAIT 768 */
 @media (max-width: 768px) and (orientation: portrait) {
-  #mobile-display {
+  #desktop-display {
     display: none;
+  }
+  #mobile-display {
+    display: block;
   }
 
   .navbar {
@@ -376,9 +394,9 @@ h2 {
     height: 40px;
   }
 
-  /* .container {
+  .container {
     width: 704px;
-  } */
+  }
 
   .filter-container {
     width: 704px;
@@ -444,6 +462,62 @@ h2 {
 .nav-right {
   margin: .15em 0;
 }
+
+.product-info-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.mobile1 {
+  width: 45%;
+  display: block;
+}
+
+.mobile2 {
+  width: 54%;
+  display: block;
+}
+
+.product-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-price {
+  width: 45%;
+}
+.product-total {
+  width: 45%;
+}
+
+.premium-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.bestseller-row1 {
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.bestseller-row2 {
+  height: 38%;
+}
+.premium-img {
+  width: 31%;
+}
+
+.premium-text {
+  width: 67%;
+}
+
+.pb-stock-info {
+  display: flex;
+  flex-direction: row;
+}
+
 
 /* MOBILE 375 */
 
@@ -625,5 +699,7 @@ h2 {
     display: flex;
     flex-direction: row;
   }
+
+
 
 }
