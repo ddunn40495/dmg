@@ -129,7 +129,6 @@ h2 {
   height: 187px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -140,12 +139,9 @@ h2 {
 .premium-bestseller,
 .economy-bestseller {
   box-sizing: border-box;
-  position: relative;
 }
 
 .premium-info {
-  display: flex;
-  flex-direction: row;
   width: 646px;
   height: 175px;
   box-sizing: border-box;
@@ -260,7 +256,7 @@ h2 {
   width: 40.76px;
   height: 72.9px;
   /* top: 0;
-  right: 0; */
+    right: 0; */
 }
 
 .pb-stock-info {
@@ -373,6 +369,13 @@ h2 {
 
 /* TABLET PORTRAIT 768 */
 @media (max-width: 768px) and (orientation: portrait) {
+  .desktop-display {
+    display: none;
+  }
+  .mobile-display {
+    display: block;
+  }
+
   .navbar {
     width: 768px;
     height: 80px;
@@ -510,6 +513,13 @@ h2 {
 /* MOBILE 375 */
 
 @media (max-width: 375px) {
+  .desktop-display {
+    display: none;
+  }
+  .mobile-display {
+    display: block;
+  }
+
   .navbar {
     width: 375px;
     height: 56px;
