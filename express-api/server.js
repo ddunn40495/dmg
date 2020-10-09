@@ -4,10 +4,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-const port = 3000;
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
-
+// const cors = require("cors");
 // =======================================
 //              MIDDLEWARE
 // =======================================
@@ -15,23 +14,23 @@ require("dotenv").config();
 app.use(express.static("public"));
 app.use(express.json());
 
-const whitelist = ["http://localhost:3000"];
-const corsOptions = {
-  origin: (origin, callback) => {
-    if (whitelist.indexOf(origin) >= 0) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-};
+// const whitelist = ["http://localhost:3000", "http://localhost:3004"];
+// const corsOptions = {
+//   origin: (origin, callback) => {
+//     if (whitelist.indexOf(origin) >= 0) {
+//       callback(null, true);
+//     } else {
+//       callback(new Error("Not allowed by CORS"));
+//     }
+//   },
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 // =======================================
 //              DATABASE
 // =======================================
-const port = process.env.PORT || 3004;
+const port = process.env.PORT || 3003;
 const mongoURI = process.env.MONGODB_URI;
 const db = mongoose.connection;
 const dbName = process.env.DBNAME;
@@ -54,13 +53,14 @@ db.on("disconnected", () => console.log("mongo disconnected"));
 // =======================================
 //          CONTROLLERS
 // =======================================
-const eventsController = require("./controllers/events_controller.js");
-app.use("/events", eventsController);
-const goalsController = require("./controllers/goals_controller.js");
-app.use("/goals", goalsController);
-const tasksController = require("./controllers/tasks_controller.js");
-app.use("/tasks", tasksController);
 
+const tireController = require("./controllers/tire_controller.js");
+app.use("/", tireController);
+
+app.get("/", (req, res) => {
+  const test = "yup";
+  res.send(`does it work???? ${test}`);
+});
 // =======================================
 //              LISTENER
 // =======================================

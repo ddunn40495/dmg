@@ -5,7 +5,7 @@ const tires = [
     price: 30,
     img:
       "https://www.michelinman.com/on/demandware.static/-/Sites-michelin-master-catalog/default/dw39c2fbd3/images/tires/premier-as/tire-premier-as.png",
-    inStock: 20,
+    inStock: 120,
     carTypes: ["Sedan", "Truck", "SUV", "Hybird"],
   },
   {
@@ -14,7 +14,7 @@ const tires = [
     price: 50,
     img:
       "https://www.michelinman.com/on/demandware.static/-/Sites-michelin-master-catalog/default/dw39c2fbd3/images/tires/premier-as/tire-premier-as.png",
-    inStock: 20,
+    inStock: 120,
     carTypes: ["Sedan", "Truck", "SUV", "Hybird"],
   },
   {
@@ -23,7 +23,7 @@ const tires = [
     price: 75,
     img:
       "https://www.michelinman.com/on/demandware.static/-/Sites-michelin-master-catalog/default/dw39c2fbd3/images/tires/premier-as/tire-premier-as.png",
-    inStock: 20,
+    inStock: 120,
     carTypes: ["Sedan", "Truck", "SUV", "Hybird"],
   },
   {
@@ -32,7 +32,7 @@ const tires = [
     price: 100,
     img:
       "https://www.michelinman.com/on/demandware.static/-/Sites-michelin-master-catalog/default/dw39c2fbd3/images/tires/premier-as/tire-premier-as.png",
-    inStock: 20,
+    inStock: 120,
     carTypes: ["Sedan", "Truck", "SUV", "Hybird"],
   },
   {
@@ -41,7 +41,7 @@ const tires = [
     price: 125,
     img:
       "https://www.michelinman.com/on/demandware.static/-/Sites-michelin-master-catalog/default/dw39c2fbd3/images/tires/premier-as/tire-premier-as.png",
-    inStock: 20,
+    inStock: 120,
     carTypes: ["Sedan", "Truck", "SUV", "Hybird"],
   },
 ];
