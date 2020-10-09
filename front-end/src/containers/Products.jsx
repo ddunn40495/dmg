@@ -1,10 +1,8 @@
 import React from "react";
-import Bestseller2 from "../components/Bestseller2";
 import Item from "../components/Item";
 import LoadButton from "../components/LoadButton";
 import tires from "../data/tires";
-import BestsellerDesk from "../components/BestsellerDesk";
-import BestsellerMob from "../components/BestsellerMob";
+
 import Bestseller from "../components/Bestseller";
 
 import "../App.css";
@@ -26,25 +24,20 @@ class Products extends React.Component {
   render() {
     return (
       <div className='products-container'>
-        <div className='bestsellers-container'>
-          <BestsellerDesk
-            className='desktop-display'
-            brand={this.state.data[4].brand}
-            name={this.state.data[4].name}
-            img={this.state.data[4].img}
-            price={this.state.data[4].price}
-            cat={"Premium"}
-          />
-          <BestsellerDesk
-            className='desktop-display'
-            brand={this.state.data[0].brand}
-            name={this.state.data[0].name}
-            img={this.state.data[0].img}
-            price={this.state.data[0].price}
-            cat={"Economy"}
-          />
+        <Bestseller
+          brand1={this.state.data[4].brand}
+          name1={this.state.data[4].name}
+          img1={this.state.data[4].img}
+          price1={this.state.data[4].price}
+          cat1={"Premium"}
+          className='desktop-display'
+          brand2={this.state.data[0].brand}
+          name2={this.state.data[0].name}
+          img2={this.state.data[0].img}
+          price2={this.state.data[0].price}
+          cat2={"Economy"}
+        />
 
-        </div>
         <div className='item-container'>
           <Item
             brand={this.state.data[1].brand}

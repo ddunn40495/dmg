@@ -29,15 +29,13 @@ class Bestseller extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className='bestsellers-container'>
         <div className='desktop-display'>
           <div className='premium-bestseller'>
-            <div className='tag'>{this.props.cat} Bestseller</div>
+            <div className='tag'>{this.props.cat1} Bestseller</div>
             <div className='premium-info'>
               <div className='premium-img'>
-                <div className='tire-img'>
-                  <img src={Tire} alt='tire img' />
-                </div>
+                <div className='tire-img'></div>
                 <div className='auto-img'>
                   <img src={Autoexpress} alt='auto express logo' />
                 </div>
@@ -45,7 +43,7 @@ class Bestseller extends React.Component {
 
               <div className='premium-text'>
                 <h2>
-                  {this.props.brand} {this.props.name} 5
+                  {this.props.brand1} {this.props.name1} 5
                 </h2>
                 <div className='pb-stock-info'>
                   <div className='oelogo'>
@@ -54,7 +52,7 @@ class Bestseller extends React.Component {
                   <div className='product-details'>
                     <div className='pd-item'>205/55 R16 H SUV</div>
                     <div className='pd-item'>Stock ✅</div>
-                    <div className='pd-item'>Price ₪{this.props.price}</div>
+                    <div className='pd-item'>Price ₪{this.props.price1}</div>
                     <div className='pd-item'>Total ₪1,360</div>
                   </div>
                 </div>
@@ -71,46 +69,41 @@ class Bestseller extends React.Component {
             </div>
           </div>
         </div>
-
-        <div id='mobile-display'>
-          <div className='premium-bestseller'>
-            <div className='tag'>{this.props.cat} Bestseller</div>
-
+        <div className='desktop-display'>
+          <div className='economy-bestseller'>
+            <div className='tag'>{this.props.cat2} Bestseller</div>
             <div className='premium-info'>
-              <div className='bestseller-row1'>
-                <div className='premium-img'>
-                  <div className='tire-img'></div>
-                  <div className='auto-img'>
-                    <img src={Autoexpress} alt='auto express logo' />
-                  </div>
-                </div>
-
-                <div className='premium-text'>
-                  <h2>
-                    {this.props.brand} - {this.props.name}
-                  </h2>
-                  <div className='pb-stock-info'>
-                    <div className='row1'>
-                      <img src={Oelogo} className='oelogo' />
-                      205/55 R16 H SUV
-                    </div>
-
-                    <div className='row2'>
-                      <div className='pd-item'>
-                        Stock ✅ Price ₪{this.props.price} Total ₪1,360
-                      </div>
-                    </div>
-                  </div>
+              <div className='premium-img'>
+                <div className='tire-img'></div>
+                <div className='auto-img'>
+                  <img src={Autoexpress} alt='auto express logo' />
                 </div>
               </div>
 
-              <div className='bestseller-row2 button-container'>
-                <StockButton
-                  num={this.state.num}
-                  add={this.addNum}
-                  sub={this.subNum}
-                />
-                <CartButton />
+              <div className='premium-text'>
+                <h2>
+                  {this.props.brand2} {this.props.name2} 5
+                </h2>
+                <div className='pb-stock-info'>
+                  <div className='oelogo'>
+                    <img src={Oelogo} />
+                  </div>
+                  <div className='product-details'>
+                    <div className='pd-item'>205/55 R16 H SUV</div>
+                    <div className='pd-item'>Stock ✅</div>
+                    <div className='pd-item'>Price ₪{this.props.price2}</div>
+                    <div className='pd-item'>Total ₪1,360</div>
+                  </div>
+                </div>
+
+                <div className='button-container'>
+                  <StockButton
+                    num={this.state.num}
+                    add={this.addNum}
+                    sub={this.subNum}
+                  />
+                  <CartButton />
+                </div>
               </div>
             </div>
           </div>
