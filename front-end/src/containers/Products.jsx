@@ -23,22 +23,22 @@ class Products extends React.Component {
   }
   render() {
     return (
-      <div className='products-container'>
-        <Bestseller
-          brand1={this.state.data[4].brand}
-          name1={this.state.data[4].name}
-          img1={this.state.data[4].img}
-          price1={this.state.data[4].price}
-          cat1={"Premium"}
-          className='desktop-display'
-          brand2={this.state.data[0].brand}
-          name2={this.state.data[0].name}
-          img2={this.state.data[0].img}
-          price2={this.state.data[0].price}
-          cat2={"Economy"}
-        />
-
-        <div className='item-container'>
+      <div className='container'>
+        <div className='row'>
+          <Bestseller
+            brand1={this.state.data[4].brand}
+            name1={this.state.data[4].name}
+            img1={this.state.data[4].img}
+            price1={this.state.data[4].price}
+            cat1={"Premium"}
+            brand2={this.state.data[0].brand}
+            name2={this.state.data[0].name}
+            img2={this.state.data[0].img}
+            price2={this.state.data[0].price}
+            cat2={"Economy"}
+          />
+        </div>
+        <div className='item-container '>
           <Item
             brand={this.state.data[1].brand}
             name={this.state.data[1].name}
